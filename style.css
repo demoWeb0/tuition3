@@ -160,6 +160,17 @@ img { display: block; max-width: 100%; }
   font-weight: 900; line-height: 1.14; margin-bottom: 20px;
   animation: fadeUp .7s .12s ease both;
 }
+/* Only add this cursor style */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background: currentColor;
+  animation: blink .6s step-end infinite;
+  vertical-align: baseline;
+  margin-left: 2px;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 .hero-sub {
   color: var(--mid); font-size: 1.05rem; max-width: 440px;
   margin-bottom: 32px;
@@ -201,7 +212,7 @@ img { display: block; max-width: 100%; }
   display: grid; grid-template-columns: repeat(4,1fr); gap: 22px;
 }
 .why-card {
-  background: #fff; border: 1.5px solid #f0e8e0;
+  background: #ffefef; border: 1.5px solid #f0e8e0;
   border-radius: var(--r-md); padding: 30px 24px;
   text-align: center; transition: transform .28s, box-shadow .28s;
 }
@@ -517,7 +528,7 @@ img { display: block; max-width: 100%; }
   .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 44px; padding-top: 50px; }
   .hero-sub { margin: 0 auto 28px; }
   .hero-actions { justify-content: center; }
-  .hero-img-wrap img { height: 300px; }
+  .hero-img-wrap img { height: 500px; }
   .chip-a { left: 0; bottom: 16px; }
   .chip-b { right: 0; top: 16px; }
 
